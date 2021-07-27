@@ -1,0 +1,176 @@
+body,html{
+	background: grey;
+	height: 100%;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: default;
+}
+
+
+/*classes*/
+.card{
+	background-image: linear-gradient(to left, rgba(10, 10, 200, .5), rgba(200, 10, 10, .5));
+	width: 500px;
+	height: 80%;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	box-shadow: 1px 1px 15px black;
+	overflow: hidden;
+	vertical-align: middle;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.top_sec{
+	flex: 3;
+}.down_sec{
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.down_sec div{
+	flex: 1;
+}
+
+
+.img{
+	position: absolute;
+	width: 130%;
+	top: -140px;
+	left: 0;
+	transition: all 1s;
+
+}
+.shoe_bg{
+	background: red;
+	width: 600px;
+	height: 600px;
+	right: -200px;
+	top: -250px;
+	position: absolute;
+	border-radius: 50%;
+	transition: all 1s;
+}
+
+.size, .color, .btn{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	transform: translateY(1000%);
+	transition: all 1s;
+}
+.color{
+	align-items: center;
+}
+
+.shoe_name{
+	font-size: 50px;
+	color: white;
+	margin-top: 100%;
+	transition: all .5s;
+}
+
+
+
+.size span{
+	flex: 1;
+	background: cyan;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 10px;
+	cursor: pointer !important;
+}
+
+
+.color span{
+	background: red;
+	width: 30px;
+	height: 30px;
+	/*display: flex;*/
+	/*flex: 1;*/
+	border-radius: 50%;
+	margin: 4px;
+	cursor: pointer !important;
+}
+.btn{
+	background: cyan;
+	width: 100px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	/*padding: -20px;*/
+	border-radius: 20px;
+	box-shadow: 1px 3px 10px black;
+	cursor: pointer !important;
+}
+
+
+/*ids*/
+#black{
+	background: black;
+}
+#blue{
+	background: blue;
+}
+#green{
+	background: green;
+}
+#red{
+	background: red;
+}
+#yellow{
+	background: yellow;
+}
+
+
+/*action*/
+.card:hover .size,
+.card:hover .color, 
+.card:hover .btn{
+	transform: translateX(0);
+}
+.card:hover .shoe_name{
+	font-size: 20px;
+	margin-top: 0;
+}
+
+
+.card:hover .color span:hover{
+	width: 40px;
+	height: 40px;
+	transition: width .3s, height .3s;
+}
+.card:hover .size span:hover{
+	background: blue;
+	color: white;
+	transition: all .3s;
+}
+.card:hover .btn:hover{
+	background: blue;
+	color: white;
+	transition: all .3s;
+}
+
+.card:hover .shoe_bg{
+	width: 700px;
+	height: 550px;
+}
+
+.card:hover .img{
+	width: 90%;
+	top: -10%;
+	transform: rotate(-30deg);
+}
+
+
+
+
+
